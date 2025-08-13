@@ -11,7 +11,7 @@
 
 - 📄 Know about my experiences [https://docs.google.com/document/d/1bDPx7LsQMK0i4YWJ_-q1S7uAJ5Oi15Ebfna1-X_Ynj0/edit?usp=sharing](https://docs.google.com/document/d/1bDPx7LsQMK0i4YWJ_-q1S7uAJ5Oi15Ebfna1-X_Ynj0/edit?usp=sharing)
 
-- ⚡ Fun fact ***I debug my code faster with coffee... but only after breaking it first**
+- ⚡ Fun fact **I debug my code faster with coffee... but only after breaking it first**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
