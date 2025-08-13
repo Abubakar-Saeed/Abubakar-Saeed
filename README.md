@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Springboot Framework**
 
-- 💬 Ask me about **react,java and problems.**
+- 💬 Ask me about **react,java and mysql.**
 
 - 📫 How to reach me **abubakarsaeed915@gmail.com**
 
