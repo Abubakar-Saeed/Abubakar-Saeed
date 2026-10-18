@@ -11,11 +11,24 @@
   <a href="mailto:abubakarsaeedgcuf@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-contact-334155?style=flat-square&logo=gmail&logoColor=white"></a>
 </p>
 
-I build **sequence-only encodings of biological molecules** that stay
-interpretable. A residue or nucleotide is described by the interactions it
+Hi — I'm Abubakar. I work on **interpretable machine learning for molecular
+biology**, from Chiniot, Pakistan.
+
+I came to this from the biology side first: a pre-medical background before
+computer science, which is probably why my work tends to start from a
+biophysical mechanism and end at a model, rather than the other way round.
+Since 2025 I have been doing that independently — four papers, two of them
+published — all circling one question: *how much of a molecule's behaviour can
+you predict from its sequence alone, if you encode the physics carefully
+enough?*
+
+The answer so far is: more than I expected, and the encoding stays readable
+while doing it. A residue or nucleotide is described by the interactions it
 *could* form given its sequence neighbourhood — a deterministic graph, no
-predicted structure anywhere in the pipeline, every feature readable back to
+predicted structure anywhere in the pipeline, every feature traceable back to
 the biophysical rule that produced it.
+
+I am currently applying for graduate study in computational biology.
 
 <sub>BS Computer Science (2026) · GC University Faisalabad · CGPA 3.81/4.0 · pre-medical background · independent researcher since 2025</sub>
 
