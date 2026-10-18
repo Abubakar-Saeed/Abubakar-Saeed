@@ -19,6 +19,15 @@ the biophysical rule that produced it.
 
 <sub>BS Computer Science (2026) · GC University Faisalabad · CGPA 3.81/4.0 · pre-medical background · independent researcher since 2025</sub>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-dark.gif">
+    <img alt="Sequence to constraint graph to per-residue feature profile" src="assets/pipeline-light.gif" width="100%">
+  </picture>
+</p>
+
+<p align="center"><sub>Sequence in, profile out. Nodes are residues coloured by chemistry; edges appear where two residues are chemically compatible and close enough along the chain.</sub></p>
+
 ---
 
 ## Published
