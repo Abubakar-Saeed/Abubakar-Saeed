@@ -7,6 +7,8 @@
   <a href="https://doi.org/10.1093/bioadv/vbag181"><img alt="Bioinformatics Advances" src="https://img.shields.io/badge/Bioinformatics_Advances-2026-0f766e?style=flat-square"></a>
   <a href="https://doi.org/10.1186/s12859-026-06619-5"><img alt="BMC Bioinformatics" src="https://img.shields.io/badge/BMC_Bioinformatics-2026-0f766e?style=flat-square"></a>
   <img alt="Under review" src="https://img.shields.io/badge/under_review-2_manuscripts-64748b?style=flat-square">
+  <a href="https://orcid.org/0009-0008-9936-4707"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0009--0008--9936--4707-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
+  <a href="https://scholar.google.com/citations?hl=en&user=Kp1VU0QAAAAJ"><img alt="Google Scholar" src="https://img.shields.io/badge/Google_Scholar-profile-4285f4?style=flat-square&logo=googlescholar&logoColor=white"></a>
   <a href="https://linkedin.com/in/abubakarsaeed915"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-abubakarsaeed915-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="mailto:abubakarsaeedgcuf@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-contact-334155?style=flat-square&logo=gmail&logoColor=white"></a>
 </p>
@@ -177,4 +179,4 @@ produced it.
 > of. Reach me at
 > **[abubakarsaeedgcuf@gmail.com](mailto:abubakarsaeedgcuf@gmail.com)**.
 
-<sub>Chiniot, Punjab, Pakistan · [LinkedIn](https://linkedin.com/in/abubakarsaeed915)</sub>
+<sub>Chiniot, Punjab, Pakistan · [ORCID](https://orcid.org/0009-0008-9936-4707) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=Kp1VU0QAAAAJ) · [LinkedIn](https://linkedin.com/in/abubakarsaeed915)</sub>
