@@ -3,81 +3,151 @@
   <img alt="Abubakar Saeed — interpretable physicochemical graph encoding for protein and RNA" src="assets/banner-light.png">
 </picture>
 
-I build **sequence-only encodings of biological molecules** that stay
-interpretable: a residue or nucleotide is described by the interactions it
-could form with its neighbours, as a deterministic graph, with no predicted
-structure anywhere in the pipeline. The same encoding now covers four
-biological tasks, and every feature in it traces back to a published
-biophysical rule.
+<p align="center">
+  <a href="https://doi.org/10.1093/bioadv/vbag181"><img alt="Bioinformatics Advances" src="https://img.shields.io/badge/Bioinformatics_Advances-2026-0f766e?style=flat-square"></a>
+  <a href="https://doi.org/10.1186/s12859-026-06619-5"><img alt="BMC Bioinformatics" src="https://img.shields.io/badge/BMC_Bioinformatics-2026-0f766e?style=flat-square"></a>
+  <img alt="Under review" src="https://img.shields.io/badge/under_review-2_manuscripts-64748b?style=flat-square">
+  <a href="https://linkedin.com/in/abubakarsaeed915"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-abubakarsaeed915-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
+  <a href="mailto:abubakarsaeedgcuf@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-contact-334155?style=flat-square&logo=gmail&logoColor=white"></a>
+</p>
 
-BS Computer Science (2026), GC University Faisalabad · CGPA 3.81/4.0 ·
-pre-medical background · independent researcher since 2025.
+I build **sequence-only encodings of biological molecules** that stay
+interpretable. A residue or nucleotide is described by the interactions it
+*could* form given its sequence neighbourhood — a deterministic graph, no
+predicted structure anywhere in the pipeline, every feature readable back to
+the biophysical rule that produced it.
+
+<sub>BS Computer Science (2026) · GC University Faisalabad · CGPA 3.81/4.0 · pre-medical background · independent researcher since 2025</sub>
 
 ---
 
-## Publications
+## Published
 
-**BioGraphX: Bridging the Sequence–Structure Gap via Physicochemical Graph
-Encoding for Interpretable Subcellular Localization Prediction**
-Saeed A., Abbas W. · *Bioinformatics Advances* (Oxford University Press), 2026
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**BioGraphX**
+*Bridging the Sequence–Structure Gap via Physicochemical Graph Encoding for Interpretable Subcellular Localization Prediction*
+
+Saeed A., Abbas W.
+**Bioinformatics Advances** (Oxford University Press), 2026
+
+State of the art on DeepLoc 2.0 from sequence alone.
+
 [`10.1093/bioadv/vbag181`](https://doi.org/10.1093/bioadv/vbag181)
 
-**BioGraphX-RNA: A Universal Physicochemical Graph Encoding for Interpretable
-RNA Subcellular Localization Prediction**
-Saeed A., Abbas W. · *BMC Bioinformatics*, 2026
+</td>
+<td width="50%" valign="top">
+
+**BioGraphX-RNA**
+*A Universal Physicochemical Graph Encoding for Interpretable RNA Subcellular Localization Prediction*
+
+Saeed A., Abbas W.
+**BMC Bioinformatics**, 2026
+
+Graph-only miRNA AUROC **0.9396** · 2.05M parameters.
+
 [`10.1186/s12859-026-06619-5`](https://doi.org/10.1186/s12859-026-06619-5)
 
-### Under review
+</td>
+</tr>
+</table>
 
-**BioGraphX-IDP** — intrinsic disorder prediction · *Bioinformatics* (Oxford)
-61 biophysical features gated per residue against frozen ESM-2. Blind CAID-3
-evaluation: AUC 0.899 (PDB), 0.886 (NOX).
+## Under review
 
-**BioGraphX-Sol** — protein solubility · *BMC Bioinformatics*
-A physics-only model (R² = 0.499) exceeds FGNNSol, which builds on AlphaFold3
-structures (R² = 0.487). The ensemble matches ProtSATT at R² = 0.545 with
-1.44M parameters against 6M.
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**BioGraphX-IDP** — intrinsic disorder
+*Bioinformatics* (Oxford)
+
+61 biophysical features gated per residue against frozen ESM-2.
+Blind CAID-3: AUC **0.899** (PDB), **0.886** (NOX).
+
+</td>
+<td width="50%" valign="top">
+
+**BioGraphX-Sol** — protein solubility
+*BMC Bioinformatics*
+
+Physics-only R² **0.499** exceeds FGNNSol (AlphaFold3-based, 0.487).
+Ensemble matches ProtSATT at 0.545 — 1.44M parameters against 6M.
+
+</td>
+</tr>
+</table>
 
 ---
 
-## The framework
+## One encoding, four domains
 
-| Domain | What it encodes | Result that matters |
-|---|---|---|
-| Protein localisation | Residue interaction graph, 158 features | State of the art on DeepLoc 2.0 |
-| RNA localisation | Base pairing, stacking, stem-loops, pseudoknots | Graph-only miRNA AUROC 0.9396, 2.05M parameters |
-| Intrinsic disorder | Per-residue gating against ESM-2 | Blind CAID-3: 0.899 PDB / 0.886 NOX |
-| Solubility | 200-dimensional physicochemical encoding | Beats a structure-based model without using structures |
+| Domain | What it encodes | Headline |
+|:--|:--|:--|
+| **Protein localisation** | Residue interaction graph, 158 features | State of the art on DeepLoc 2.0 |
+| **RNA localisation** | Base pairing, stacking, stem-loops, pseudoknots | Graph-only miRNA AUROC 0.9396 |
+| **Intrinsic disorder** | Per-residue gating against ESM-2 | Blind CAID-3: 0.899 PDB / 0.886 NOX |
+| **Solubility** | 200-dimensional physicochemical encoding | Beats a structure-based model, without structures |
 
-**One finding ties them together.** Each paper measures how much of the signal
-is biophysics and how much is evolutionary information, by sweeping the blend
-weight. The answer depends on how the property is defined, not on the
-molecule: solubility, a physically measured property, lands at 59% physics;
-disorder lands at 49% on the structurally observed CAID-3 PDB track but 13% on
-the functionally annotated NOX track — a 3.8-fold difference between two tracks
-of the same task.
+<details>
+<summary><b>The finding that ties them together</b></summary>
 
-**What the encoding is.** A residue or nucleotide is described by the
-interactions it *could* form given its sequence neighbourhood — interaction
-capacity rather than geometry. That is complementary to a contact map, not an
-approximation of one, which is why the method needs no predicted structure, no
-multiple sequence alignment, and no solved structure for the target, and why
-every feature stays readable back to the rule that produced it.
+<br>
+
+Each paper measures how much of the signal is biophysics and how much is
+evolutionary information, by sweeping the blend weight between the two streams.
+The answer turns out to depend on **how the property is defined**, not on the
+molecule.
+
+Solubility — physically measured — settles at 59% physics. Intrinsic disorder
+settles at 49% on the structurally observed CAID-3 PDB track but 13% on the
+functionally annotated NOX track: a 3.8-fold difference between two tracks of
+the *same* task. Properties that are measured physically want physics;
+properties that are annotated by function want evolution.
+
+</details>
+
+<details>
+<summary><b>What the encoding is, and is not</b></summary>
+
+<br>
+
+Interaction capacity, not geometry. Edges are placed by sequence separation and
+residue chemistry, so the representation is **complementary to a contact map
+rather than an approximation of one**. That is why the method needs no
+predicted structure, no multiple sequence alignment, and no solved structure
+for the target — and why every feature stays traceable to the rule that
+produced it.
+
+</details>
+
+---
 
 ## Interests
 
-Interpretable AI for biomedicine · protein and RNA structure–function
-prediction · graph representations of sequence · parameter-efficient and Green
-AI · generative models for RNA and protein design · bioinformatics tool
-development
+`interpretable AI for biomedicine` · `protein & RNA structure–function` ·
+`graph representations of sequence` · `parameter-efficient & Green AI` ·
+`generative models for RNA and protein design` · `bioinformatics tooling`
 
 ## Tools
 
-Python · PyTorch · XGBoost · SHAP · ESM-2 · RiNALMo · BioPython · igraph ·
-LaTeX · Java, C++, JavaScript, SQL
+![Python](https://img.shields.io/badge/Python-1e293b?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-1e293b?style=flat-square&logo=pytorch&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-1e293b?style=flat-square)
+![SHAP](https://img.shields.io/badge/SHAP-1e293b?style=flat-square)
+![ESM&#8209;2](https://img.shields.io/badge/ESM--2-1e293b?style=flat-square)
+![RiNALMo](https://img.shields.io/badge/RiNALMo-1e293b?style=flat-square)
+![BioPython](https://img.shields.io/badge/BioPython-1e293b?style=flat-square)
+![LaTeX](https://img.shields.io/badge/LaTeX-1e293b?style=flat-square&logo=latex&logoColor=white)
 
 ---
 
-<sub>[Email](mailto:abubakarsaeedgcuf@gmail.com) ·
-[LinkedIn](https://linkedin.com/in/abubakarsaeed915) ·
-Chiniot, Punjab, Pakistan</sub>
+> [!NOTE]
+> **Open to collaboration.** I am always glad to discuss joint work, reviews,
+> or applying this encoding to a new molecule or property — enzyme engineering,
+> aptamer design, protein property prediction, or something I have not thought
+> of. Reach me at
+> **[abubakarsaeedgcuf@gmail.com](mailto:abubakarsaeedgcuf@gmail.com)**.
+
+<sub>Chiniot, Punjab, Pakistan · [LinkedIn](https://linkedin.com/in/abubakarsaeed915)</sub>
