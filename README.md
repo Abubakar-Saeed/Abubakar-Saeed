@@ -11,8 +11,7 @@ biological tasks, and every feature in it traces back to a published
 biophysical rule.
 
 BS Computer Science (2026), GC University Faisalabad · CGPA 3.81/4.0 ·
-pre-medical background · all of the work below done without lab funding,
-institutional compute, or a research group.
+pre-medical background · independent researcher since 2025.
 
 ---
 
