@@ -58,13 +58,12 @@ disorder lands at 49% on the structurally observed CAID-3 PDB track but 13% on
 the functionally annotated NOX track — a 3.8-fold difference between two tracks
 of the same task.
 
-**What the encoding is, stated carefully.** It is a structure-*informed* proxy,
-not a structure predictor. Edges are placed by sequence separation and residue
-chemistry, not by spatial proximity, and peer review on both published papers
-pushed that claim to where the evidence supports it. Later work found that
-filtering the graph toward genuine spatial contacts makes it *worse* — the
-representation captures interaction capacity, which is complementary to a
-contact map rather than an approximation of one.
+**What the encoding is.** A residue or nucleotide is described by the
+interactions it *could* form given its sequence neighbourhood — interaction
+capacity rather than geometry. That is complementary to a contact map, not an
+approximation of one, which is why the method needs no predicted structure, no
+multiple sequence alignment, and no solved structure for the target, and why
+every feature stays readable back to the rule that produced it.
 
 ## Interests
 
