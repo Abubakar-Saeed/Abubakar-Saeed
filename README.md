@@ -41,6 +41,11 @@ I am currently applying for graduate study in computational biology.
 
 <p align="center"><sub>Sequence in, profile out. Nodes are residues coloured by chemistry; edges appear where two residues are chemically compatible and close enough along the chain.</sub></p>
 
+<p align="center">
+  <a href="https://abubakar-saeed.github.io"><b>Try it in your browser →</b></a><br>
+  <sub>Paste any protein sequence and build the graph live. Hover a residue to see its features and which rules fired.</sub>
+</p>
+
 ---
 
 ## Published
